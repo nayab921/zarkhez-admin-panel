@@ -1,0 +1,68 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* Import Modern Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --color-primary: #1B5E20;
+  --color-primary-dark: #124116;
+  --color-primary-light: #2E7D32;
+  /* Dark BG set kar rahay hain taake overlay base sahi banay */
+  --color-background: #000000;
+  /* Surfaces semi-transparent white banayein ge glass effect ke liye */
+  --color-surface: rgba(255, 255, 255, 0.9); 
+}
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #f1f1f1; 
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+
+  /* Yahan darkness 0.3 aur 0.4 ki hai taake kisan aur tube-well saaf nazar aaye */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), 
+                    url('/image_3bbc17.png'); 
+  
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+/* Adjust headlines globally to be white to ensure readability against new BG */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff !important; /* Force white color for BG compatibility */
+}
+
+/* Fix default paragraphs where color isn't explicitly defined in Tailwind */
+p {
+    color: #d1d1d1;
+}
+
+.container-custom {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Lighter gradient text to match dark BG */
+.gradient-text {
+  background: linear-gradient(135deg, #a5d6a7 0%, #C8E6C9 50%, #E8F5E9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Darker Glass card style for BG compatibility */
+.glass-card {
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
