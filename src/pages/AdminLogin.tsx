@@ -68,7 +68,7 @@ export default function AdminLogin() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@zarkhez.com"
+                  placeholder="Enter your email" 
                   className="w-full pl-12 pr-5 py-4 bg-white/10 border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#A5D6A7] focus:border-transparent transition-all text-white placeholder:text-gray-400"
                   required
                 />
