@@ -27,6 +27,7 @@ body {
   background-position: center; 
   background-repeat: no-repeat;
   background-attachment: fixed; 
+  background-position: center 4px;
 }
 
 /* Adjust headlines globally to be white to ensure readability against new BG */
