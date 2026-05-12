@@ -25,13 +25,6 @@ export default function Navigation() {
                 className="relative z-10 w-full h-full object-contain brightness-125 contrast-125"
               />
             </div>
-            {/* Logo text - Jo Image ke saath pehle se tha */}
-            <span
-              className="font-bold text-2xl text-white drop-shadow-md"
-              style={{ fontFamily: "Space Grotesk, sans-serif" }}
-            >
-              Zarkhez
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
